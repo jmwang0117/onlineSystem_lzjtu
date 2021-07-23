@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>视频详情</title>
+		<link rel="stylesheet" type="text/css" href="Student/css/default.css">
+	</head>
+	<body>
+	    <div class="main">
+	        <div class="course-info">
+				<div class="wrap-left">
+					<video src="./upload/1.mp4" controls="controls" style="width: 600px;height: 300px">
+
+					</video>
+				</div>
+	            <div class="wrap-right">
+	                <h3 class="course-name">python开发21天入门</h3>
+	                <p class="data">2134人在学&nbsp;&nbsp;&nbsp;&nbsp;课程总时长：64课时/2小时&nbsp;&nbsp;&nbsp;&nbsp;难度：初级</p>
+	                <div class="sale-time">
+	                    <p class="sale-type">价格 <span class="original_price">¥666</span></p>
+	                    <p class="expire"></p>
+	                </div>
+	                <div class="buy">
+	                    <div class="buy-btn">
+	                        <button class="buy-now">立即购买</button>
+	                        <button class="free">免费试学</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>	
+			<div class="course-content">
+				<article class="tabs" >
+					<input checked id="one" name="tabs" type="radio">
+					<label for="one">详情介绍</label> 	    
+					<input id="two" name="tabs" type="radio" value="Two">	    
+					<label for="two">课程章节</label> 	    
+					<input id="three" name="tabs" type="radio">	    
+					<label for="three">用户评论</label> 	    
+					<input id="four" name="tabs" type="radio">	    
+					<label for="four">授课老师</label> 
+					<div class="panels">
+						<div class="panel">
+						    <h2>python</h2>
+						    <p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p>
+						    <p>Python 的设计具有很强的可读性，相比其他语言经常使用英文关键字，其他语言的一些标点符号，
+							   它具有比其他语言更有特色语法结构。</p>	
+						</div>
+						<div class="panel">
+						    <ul class="section-list">
+						        <li class="section-item" v-for="section in chapter.coursesections" :key="section.name">
+						            <p class="name"><span class="index">第一章--计算机原理</span>
+						            <span class="free" v-if="section.free_trail">免费</span></p>
+						            <p class="time">时长：2小时 </p>
+							        <p class="name"><span class="index">第二章--列表，元组，字典</span>
+							        <span class="free" v-if="section.free_trail">免费</span></p>
+							        <p class="time">时长：2.5小时 </p>	
+						        </li>
+						    </ul>	   
+						</div> 
+						<div class="panel">
+						    <h2>用户评论</h2>		    	
+						    <p>Python现在的使用者众多，喜欢它和不喜欢它的人都有很多，也有很多人只是拿它来写写简单的脚本。
+						        在知乎里多次碰到评价Python的文章，刚好公司小组里也有讨论，
+						        我想写一篇文章记录下来我对Python的评价。评价仅限于语言本身的设计和社区氛围，
+						        不包括库和工具链等。因为我觉得语言的设计和社区氛围是很难改变的，
+						        而其他的部分也许会变化很快。
+							</p>		    
+						</div> 
+						<div class="panel">
+						    <div class="course-side">
+						        <div class="teacher-info">
+						            <h4 class="side-title"><span>授课老师</span></h4>
+						                <div class="teacher-content">
+						                    <div class="cont1">
+						                        <img style="border-radius: 100%;" src="Student/img/Z3.png "\>
+						                        <div class="name">
+						                            <p class="teacher-name">陈永教授</p>
+						                            <p class="teacher-title">python教学总监</p>
+						                        </div>
+						                    </div>
+						                 	 <a href="https://dxxy.lzjtu.edu.cn/info/1156/2963.htm"> <img src="Student/img/Z2.png" width="180" height="80"\></a>
+						                </div>
+						        </div>
+						    </div>
+						</div>
+
+
+						
+					</div>
+				</article>	
+			</div>
+
+		</div>
+			
+			
+
+	</body>
+</html>
